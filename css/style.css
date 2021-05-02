@@ -1,0 +1,231 @@
+body {
+  margin: 0px;
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.app {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+/*********************** Main Content Style **********************/
+
+.main {
+  padding: 100px 0px 0px 350px;
+}
+.main .container {
+  padding-bottom: 20px;
+}
+
+/***** Carousel *****/
+.flickity-page-dots .dot.is-selected {
+  background: #65c100 !important;
+}
+.carousel {
+  width: 100%;
+}
+.carousel .carousel-cell {
+  width: 220px;
+  height: 330px;
+  cursor: pointer;
+  padding: 0px 10px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+.carousel .carousel-cell:first-child {
+  padding-left: 0px;
+}
+.carousel .carousel-cell:last-child {
+  padding-right: 0px;
+}
+.carousel .carousel-cell .thumbnail {
+  position: absolute;
+}
+.carousel .carousel-cell .overlay-details {
+  position: relative;
+}
+
+.thumbnail {
+  width: 220px;
+  height: 330px;
+}
+.thumbnail .thumbnail-container {
+  position: relative;
+}
+.thumbnail .thumbnail-container > img {
+  width: 220px;
+  height: 330px;
+  object-fit: cover;
+  position: absolute;
+}
+.carousel-cell:hover .thumbnail-container img {
+  filter: blur(2px);
+}
+.thumbnail .thumbnail-container .menu {
+  top: 10px;
+  right: 10px;
+  width: 16px;
+  height: 16px;
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 100%;
+}
+.thumbnail .thumbnail-container .menu img {
+  margin: auto;
+  display: flex;
+  width: fit-content;
+}
+
+.overlay-details {
+  opacity: 0;
+  width: 220px;
+  height: 330px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  background: linear-gradient(0deg, #000000 10%, #000000cc 60%, #00000099 90%, #00000066 100%);
+}
+
+.overlay-details .container {
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.overlay-details .close-button {
+  width: fit-content;
+  padding-top: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-right: 0px;
+  display: none;
+  position: absolute;
+  right: 0;
+}
+.overlay-details .close-button img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/***** Books *****/
+.main .container .books {
+  margin-top: 50px;
+}
+.main .container .books section {
+  margin-top: 30px;
+}
+.main .container .books section .books-grid {
+  padding: 0;
+  display: grid;
+  display: grid;
+  padding: 0px 50px;
+  list-style-type: none;
+  grid-template-columns: auto auto auto;
+}
+.main .container .books section .books-grid > li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+.main .container .books section .books-grid > li:hover {
+  background-color: #f2f2f2cc;
+}
+.main .container .books section .books-grid > li > img {
+  margin: auto 0;
+  width: 106.67px;
+  height: 160px;
+}
+.main .container .books section .books-grid > li .details {
+  margin: auto 0;
+  padding: 0px 10px;
+}
+.books-grid > li .details .engagement .interactions li img {
+  height: 11px;
+  width: auto;
+}
+.books-grid > li .details p {
+  margin-bottom: 3px;
+}
+.details .status {
+  margin-bottom: 10px !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main {
+    padding-left: 0px;
+  }
+
+  .main .container .books section .books-grid {
+    padding: 0px 20px;
+    grid-template-columns: auto;
+  }
+  .main .container .books section .books-grid {
+    margin: 0px;
+  }
+  .main .container .books section .books-grid > li {
+    padding: 10px 0px;
+  }
+  .main-title {
+    padding: 30px 20px 10px 20px;
+  }
+  .main .container section .main-title.carousel-title {
+    display: none;
+  }
+
+  .carousel {
+    margin-top: 20px;
+  }
+
+  .carousel-cell:hover .thumbnail-container img {
+    filter: none;
+  }
+
+  .thumbnail,
+  .thumbnail .thumbnail-container > img,
+  .overlay-details,
+  .carousel .carousel-cell {
+    width: 140px;
+    height: 210px;
+  }
+
+  .carousel .carousel-cell {
+    padding: 0px 3px;
+  }
+
+  .thumbnail .thumbnail-container .menu {
+    display: block;
+  }
+
+  .overlay-details {
+    opacity: 0;
+    cursor: auto;
+  }
+  .overlay-details .close-button {
+    display: block;
+  }
+
+  .overlay-details .container .details {
+    padding: 10px;
+  }
+
+  .overlay-details .container .details .genre_label {
+    display: none;
+  }
+  .overlay-details .container .details .engagement {
+    display: block;
+  }
+  .overlay-details .container .details .engagement .rating {
+    border-right: none;
+  }
+  .overlay-details .container .details .engagement .interactions {
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+}

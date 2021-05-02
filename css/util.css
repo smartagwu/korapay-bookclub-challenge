@@ -1,0 +1,252 @@
+p {
+  margin: 0;
+  color: #000000;
+}
+strong {
+  font-weight: 500;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.display-none {
+  display: none;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.background-white {
+  background-color: #fff;
+}
+
+.font-green {
+  color: #65c100;
+}
+
+.container {
+  width: auto;
+  height: 100%;
+}
+
+.col-4 {
+  max-width: 33.333%;
+}
+
+.search-back-button {
+  width: 16px;
+  height: 14.82px;
+}
+
+.hamburger-icon {
+  width: 16px;
+  height: 15px;
+  display: none;
+}
+
+.search-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  display: none;
+}
+
+.library-icon {
+  width: 21.26px;
+  height: 20px;
+}
+
+.profile-photo {
+  width: 70px;
+  height: 70px;
+  margin: 0;
+  border-radius: 100%;
+}
+
+.font-title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20.68px;
+}
+
+.font-sm {
+  color: #aaaaaa;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 13.79px;
+}
+
+.font-md {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.bubble {
+  padding: 4px 7px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 100%;
+  background-color: #65c100;
+}
+.bubble .content {
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 12px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="text"]:focus,
+input[type="text"]:active {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #000000;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.title img {
+  margin: auto 0;
+  height: 50px;
+  width: 50px;
+}
+.title .name {
+  padding-left: 20px;
+  margin: auto 0;
+}
+.title .name .font-title {
+  margin-bottom: 5px;
+}
+
+/* dropdown style */
+.drop-down {
+  top: 40px;
+  width: 100%;
+  position: absolute;
+  border: 1px solid #dddddd;
+}
+.drop-down ul {
+  margin: 0px;
+  padding: 10px 0px;
+  list-style: none;
+}
+.drop-down ul > li {
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: 0.3s all ease-in-out;
+}
+.drop-down ul > li:hover {
+  background-color: #f2f2f2;
+}
+.drop-down ul > li > p {
+  color: #999999;
+  font-size: 14px;
+  overflow: hidden;
+  line-height: 16.09px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.drop-down ul > li > p strong {
+  color: #000000;
+}
+/* dropdown style */
+
+/* Book details style */
+.details {
+  padding: 20px;
+}
+.details p {
+  font-size: 12px;
+  line-height: 15px;
+}
+.overlay-details-text p {
+  color: #ffffff;
+}
+.details .status {
+  color: #65c100;
+  margin-bottom: 20px;
+}
+.details .title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px !important;
+  margin-bottom: 10px;
+}
+.details .author {
+  margin-bottom: 10px;
+}
+.details .genre_label {
+  margin: 20px 0px;
+}
+.details .genre_label strong {
+  font-weight: 600;
+}
+.details .engagement {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 10px;
+  flex-direction: row;
+}
+.details .engagement .rating {
+  border-right: 1px solid #dddddd;
+}
+.overlay-details-text .engagement .rating {
+  border-right: 1px solid #333333 !important;
+}
+.details .engagement .interactions {
+  margin: 0px;
+  list-style: none;
+  padding-left: 10px;
+  flex-direction: row;
+}
+.details .engagement .interactions li {
+  padding-right: 10px;
+}
+.details .engagement .interactions li img {
+  width: 17px;
+  height: auto;
+}
+.details .engagement .interactions li .p {
+  font-size: 12px;
+  line-height: 14px;
+}
+/* Book details style */
+
+/* Main title style */
+.main-title {
+  padding: 30px 50px;
+}
+.main-title > p {
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.main-title > .divider {
+  height: 1px;
+  width: 100%;
+  background-color: #eeeeee;
+}
+/* Main title style */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hamburger-icon {
+    display: block;
+    margin: auto 0px;
+    margin-right: 20px;
+  }
+
+  .drop-down {
+    top: 100px;
+    z-index: 1;
+    position: fixed;
+  }
+}
